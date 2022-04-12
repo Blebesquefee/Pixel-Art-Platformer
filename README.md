@@ -1,2 +1,2 @@
-# Algebra-Unity-Game-dev-project
-2D pixel-art platformer
+# Algebra Unity Game Dev Project
+This game is a 2D pixel-art platformer
