@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
-    private float moveSpeed = 3;
+    // Private Field
     private Transform target;
     private int destpoint = 0;
 
     // Public Field
+    public float moveSpeed = 1;
     public Transform[] waypoints;
     public SpriteRenderer spriteRenderer;
 
@@ -22,6 +23,7 @@ public class EnemyPatrol : MonoBehaviour
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * moveSpeed * Time.deltaTime, Space.World);
 
+        // if arrive to destination
         if (Vector3.Distance(transform.position, target.position) < 0.3f)
         {
             destpoint = (destpoint + 1) % waypoints.Length;
