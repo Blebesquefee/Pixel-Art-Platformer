@@ -8,6 +8,7 @@ public class EnemyPatrol : MonoBehaviour
 
     // Public Field
     public float moveSpeed = 1;
+    public int damage;
     public Transform[] waypoints;
     public SpriteRenderer spriteRenderer;
 
@@ -29,6 +30,15 @@ public class EnemyPatrol : MonoBehaviour
             destpoint = (destpoint + 1) % waypoints.Length;
             target = waypoints[destpoint];
             spriteRenderer.flipX = !spriteRenderer.flipX;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("Player"))
+        {
+            Player_Health tmp = collision.transform.GetComponent<Player_Health>();
+            tmp.TakeDamage(damage);
         }
     }
 }

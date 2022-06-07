@@ -5,6 +5,7 @@ public class Player_Health : MonoBehaviour
     // Private Field
     private int maxHealth = 500;
     private int currentHealth;
+    private bool isInvincible = false;
 
     // Public Field
     //public HealthBar healthBar;
@@ -19,6 +20,15 @@ public class Player_Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (!isInvincible)
+        {
+            currentHealth -= damage;
+            //healthBar.SetHealth(currentHealth);
+        }
     }
 }
