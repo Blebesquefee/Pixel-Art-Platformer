@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_0
+      name: walk_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,20 +112,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6d2c1cba1d7d4f2cad445a36f7f17ec
-      internalID: 872213353
+      spriteID: f0dacafd22b9a433f9e1fd06c9f4a27c
+      internalID: 165022166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_1
+      name: walk_1
       rect:
         serializedVersion: 2
         x: 16
@@ -133,20 +133,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f1dc06ca3222497989442328a5f7859
-      internalID: 28253050
+      spriteID: d92732ee33d6c4c95ae3528e10660d76
+      internalID: -1050161734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_2
+      name: walk_2
       rect:
         serializedVersion: 2
         x: 32
@@ -154,20 +154,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8db36fe5c18e54d9bae2c065121e6d60
-      internalID: -2006074222
+      spriteID: 5e0d52174428d4aad8e7ab93723ec2a8
+      internalID: -209331173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_3
+      name: walk_3
       rect:
         serializedVersion: 2
         x: 48
@@ -175,20 +175,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22ae4ee4b1b2442fbb47a43e008d618f
-      internalID: 1669203998
+      spriteID: 326bd77a0dadf4567838f036e7d15325
+      internalID: -2008224574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_4
+      name: walk_4
       rect:
         serializedVersion: 2
         x: 64
@@ -196,20 +196,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9235bfe8edd34c58bc51547e7d0c203
-      internalID: -353601239
+      spriteID: 5df08256948ab4e98befff829e07341f
+      internalID: -1670992279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_5
+      name: walk_5
       rect:
         serializedVersion: 2
         x: 80
@@ -217,20 +217,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64ac1ab1c7f164c0dac58f4d03597c63
-      internalID: 1997765387
+      spriteID: 530d99640f1dc4d888cad29e0e5abedc
+      internalID: 1712841313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_6
+      name: walk_6
       rect:
         serializedVersion: 2
         x: 96
@@ -238,20 +238,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d9ee337f6f7040d092c7fc340fdae02
-      internalID: -656657011
+      spriteID: 7f04afb376e074d929a42234179668fb
+      internalID: -1047499161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_7
+      name: walk_7
       rect:
         serializedVersion: 2
         x: 112
@@ -259,20 +259,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c13ba0e21b79541948acb375fcd1f480
-      internalID: 1715272278
+      spriteID: 06cf8bb654354489d94d861e553e3011
+      internalID: -2067039975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_8
+      name: walk_8
       rect:
         serializedVersion: 2
         x: 128
@@ -280,20 +280,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87047813fe7e945b884d414e78212bb1
-      internalID: 1130796448
+      spriteID: 8d784bbf642644a298edb67975d258c2
+      internalID: -383919436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_9
+      name: walk_9
       rect:
         serializedVersion: 2
         x: 144
@@ -301,20 +301,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4d637dd332fb4bd7938211a63f38ae2
-      internalID: 614324983
+      spriteID: 052d04c9b89a2443f9ccdbbe2e7250a7
+      internalID: 1978415906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_10
+      name: walk_10
       rect:
         serializedVersion: 2
         x: 160
@@ -322,20 +322,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b21ad50c9648b403788f6e25e67e737f
-      internalID: 818086171
+      spriteID: ceead5be7d9af4c1f87e96830e6bae2f
+      internalID: 2029727296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_11
+      name: walk_11
       rect:
         serializedVersion: 2
         x: 176
@@ -343,20 +343,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7682e88c2b74f4712a63ac84ebbcc60b
-      internalID: -936284587
+      spriteID: 0895c368140f24764b780227d4929264
+      internalID: -1385274776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_12
+      name: walk_12
       rect:
         serializedVersion: 2
         x: 192
@@ -364,20 +364,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f689e7c70679542b49d1619d99f4732f
-      internalID: -369641778
+      spriteID: b39e45e2cf7574df4907a0e3f6c125f9
+      internalID: 1372393464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_13
+      name: walk_13
       rect:
         serializedVersion: 2
         x: 208
@@ -385,20 +385,20 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfc9513562dd745628977e3204dc3dc4
-      internalID: -1805844389
+      spriteID: 04c05b0e8b803442daef0ec716859843
+      internalID: -258172080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_walk_anim_strip_15_14
+      name: walk_14
       rect:
         serializedVersion: 2
         x: 224
@@ -406,14 +406,14 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 453d5b973876d432bab987743a55c685
-      internalID: 776692435
+      spriteID: 48986d58eebb74a4fb757e7481abad92
+      internalID: -1656939055
       vertices: []
       indices: 
       edges: []
@@ -429,21 +429,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      slime_walk_anim_strip_15_12: -369641778
-      slime_walk_anim_strip_15_3: 1669203998
-      slime_walk_anim_strip_15_14: 776692435
-      slime_walk_anim_strip_15_6: -656657011
-      slime_walk_anim_strip_15_2: -2006074222
-      slime_walk_anim_strip_15_13: -1805844389
-      slime_walk_anim_strip_15_8: 1130796448
-      slime_walk_anim_strip_15_10: 818086171
-      slime_walk_anim_strip_15_0: 872213353
-      slime_walk_anim_strip_15_1: 28253050
-      slime_walk_anim_strip_15_9: 614324983
-      slime_walk_anim_strip_15_5: 1997765387
-      slime_walk_anim_strip_15_4: -353601239
-      slime_walk_anim_strip_15_7: 1715272278
-      slime_walk_anim_strip_15_11: -936284587
+      walk_5: 1712841313
+      walk_3: -2008224574
+      walk_10: 2029727296
+      walk_11: -1385274776
+      walk_6: -1047499161
+      walk_7: -2067039975
+      walk_12: 1372393464
+      walk_1: -1050161734
+      walk_9: 1978415906
+      walk_14: -1656939055
+      walk_0: 165022166
+      walk_13: -258172080
+      walk_8: -383919436
+      walk_2: -209331173
+      walk_4: -1670992279
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

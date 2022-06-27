@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d1290835747b84378b571b9808d87583
+guid: d7a2d39d3ba014864ba3f677ff32c1d7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: herochar_attack_anim_strip_4(new)_0
+      name: pushing_forward_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,20 +112,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9e3028bc0c6f4b139c411404e043e94
-      internalID: 234398436
+      spriteID: 73806e5f4f1184ee08d46705915d9f28
+      internalID: 817364878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: herochar_attack_anim_strip_4(new)_1
+      name: pushing_forward_1
       rect:
         serializedVersion: 2
         x: 16
@@ -133,20 +133,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fef9e6cfa5494ddc9e11b34de3db5c7
-      internalID: -1339475437
+      spriteID: 264f67f5a33b34e63a6b3a824389857d
+      internalID: -316355405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: herochar_attack_anim_strip_4(new)_2
+      name: pushing_forward_2
       rect:
         serializedVersion: 2
         x: 32
@@ -154,20 +154,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c34fbc157806495db4cd1b571093402
-      internalID: 105764152
+      spriteID: 77af67c5a7994487f9affdea0191ed3f
+      internalID: -841258070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: herochar_attack_anim_strip_4(new)_3
+      name: pushing_forward_3
       rect:
         serializedVersion: 2
         x: 48
@@ -175,14 +175,56 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20085cae62e664a2eb39c47d1bf8f6c3
-      internalID: -1194784069
+      spriteID: 543443509a20943aa8a9548d3b60a863
+      internalID: -86949975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pushing_forward_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1c970c9e10a4fcd80e931b53b3d19e
+      internalID: -337614980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pushing_forward_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259ba9e578fee416e8dae84dce5eafba
+      internalID: -1737549961
       vertices: []
       indices: 
       edges: []
@@ -198,10 +240,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      herochar_attack_anim_strip_4(new)_0: 234398436
-      herochar_attack_anim_strip_4(new)_2: 105764152
-      herochar_attack_anim_strip_4(new)_1: -1339475437
-      herochar_attack_anim_strip_4(new)_3: -1194784069
+      pushing_forward_3: -86949975
+      pushing_forward_0: 817364878
+      pushing_forward_2: -841258070
+      pushing_forward_4: -337614980
+      pushing_forward_5: -1737549961
+      pushing_forward_1: -316355405
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
