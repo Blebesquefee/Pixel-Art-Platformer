@@ -1,0 +1,5 @@
+create auto update pipeline
+create global release and update pipeline
+create unit test pipeline
+create key vault                            //verifier avec le prof si tout est bon
+create 4 charts
