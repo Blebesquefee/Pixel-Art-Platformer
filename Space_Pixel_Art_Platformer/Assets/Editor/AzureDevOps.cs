@@ -10,8 +10,8 @@
         
         public class AzureDevOps
         {
-            private static string outputFileName = @"space_ghost_macos";
-            private static string locationPathName = @"/Users/thr_gst/Desktop/test";
+            private static string outputFileName = @"space_ghost[macos]";
+            private static string locationPathName = @"/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/builds/macos-12/release/";
 
             public static void PerformBuild()
             {
