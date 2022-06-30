@@ -4,10 +4,10 @@ public class Player_Health : MonoBehaviour
 {
     // Private Field
     private int maxHealth = 250;
-    private int currentHealth;
     private bool isInvincible = false;
 
     // Public Field
+    public int currentHealth;
     //public HealthBar healthBar;
     // Start is called before the first frame update
     void Start()
