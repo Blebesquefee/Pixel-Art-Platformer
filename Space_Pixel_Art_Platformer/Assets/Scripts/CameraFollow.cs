@@ -15,6 +15,7 @@ public class CameraFollow : MonoBehaviour
 
     void Start()
     {
+        /*
         //Azure Part
 
         var client = new SecretClient(vaultUri: new Uri("https://keyvaultpixelartproject.vault.azure.net/"),
@@ -26,6 +27,7 @@ public class CameraFollow : MonoBehaviour
             Debug.Log("Hello Arthur");
 
         //End Azure Part
+        */
     }
 
     // Update is called once per frame
