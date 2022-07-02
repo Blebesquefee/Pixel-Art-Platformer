@@ -1,7 +1,4 @@
 using UnityEngine;
-using System;
-using Azure.Identity;
-using Azure.Security.KeyVault.Secrets;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -12,23 +9,6 @@ public class CameraFollow : MonoBehaviour
 
     // Public Field
     public GameObject player;
-
-    void Start()
-    {
-        /*
-        //Azure Part
-
-        var client = new SecretClient(vaultUri: new Uri("https://keyvaultpixelartproject.vault.azure.net/"),
-        credential: new VisualStudioCodeCredential());
-
-        var secret = client.GetSecret("KeyVaultPixelArtProject");
-
-        if (secret != null)
-            Debug.Log("Hello Arthur");
-
-        //End Azure Part
-        */
-    }
 
     // Update is called once per frame
     void Update()

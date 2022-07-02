@@ -140,7 +140,7 @@ Library: lib_burst_generated
 --root-assembly=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/Unity.2D.Common.Runtime.dll
 --root-assembly=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/Unity.2D.IK.Runtime.dll
 --root-assembly=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/Unity.2D.Tilemap.Extras.dll
---root-assembly=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/Main.dll
+--root-assembly=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll
 --root-assembly=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/Unity.InternalAPIEngineBridge.001.dll
 --assembly-folder=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/
 --pdb-search-paths=Temp/ManagedSymbols/
@@ -289,7 +289,7 @@ Library: lib_burst_generated
 --root-assembly=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/Unity.2D.Common.Runtime.dll
 --root-assembly=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/Unity.2D.IK.Runtime.dll
 --root-assembly=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/Unity.2D.Tilemap.Extras.dll
---root-assembly=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/Main.dll
+--root-assembly=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll
 --root-assembly=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/Unity.InternalAPIEngineBridge.001.dll
 --assembly-folder=/Users/thr_gst/Documents/epita/cursus/s4/Pixel-Art-Platformer/Space_Pixel_Art_Platformer/Temp/StagingArea/Data/Managed/
 --pdb-search-paths=Temp/ManagedSymbols/
