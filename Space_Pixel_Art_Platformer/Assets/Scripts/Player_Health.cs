@@ -8,12 +8,13 @@ public class Player_Health : MonoBehaviour
 
     // Public Field
     public int currentHealth;
-    //public HealthBar healthBar;
+    public HealthBar healthBar;
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-        //healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
@@ -27,7 +28,7 @@ public class Player_Health : MonoBehaviour
         if (!isInvincible)
         {
             currentHealth -= damage;
-            //healthBar.SetHealth(currentHealth);
+            healthBar.SetHealth(currentHealth);
         }
     }
 }

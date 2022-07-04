@@ -5,6 +5,8 @@ public class EnemyPatrol : MonoBehaviour
     // Private Field
     private Transform target;
     private int destpoint = 0;
+    private float _damagedelay = 0.5f;
+    private float _candealdamage = -1f;
 
     // Public Field
     public float moveSpeed = 1;
@@ -31,11 +33,14 @@ public class EnemyPatrol : MonoBehaviour
             target = waypoints[destpoint];
             spriteRenderer.flipX = !spriteRenderer.flipX;
         }
+
+        //Dealing Damage Part
+        _candealdamage = Time.time + _damagedelay;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.CompareTag("Player"))
+        if (collision.transform.CompareTag("Player") && Time.time > _candealdamage)
         {
             Player_Health tmp = collision.transform.GetComponent<Player_Health>();
             tmp.TakeDamage(damage);
