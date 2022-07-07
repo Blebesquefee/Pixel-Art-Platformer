@@ -7,6 +7,9 @@ public class Player_Mvmt : MonoBehaviour
     private bool isGrounded = true;
     private float moveSpeed = 250;
     private float jumpForce = 250;
+
+    private int simpleAttack = 25;
+    private int swordAttack = 50;
     private Vector3 velocity = Vector3.zero;
 
     // Public Field
@@ -51,5 +54,11 @@ public class Player_Mvmt : MonoBehaviour
             spriteRenderer.flipX = false;
         else if (_velocity < -0.1f)
             spriteRenderer.flipX = true;
+    }
+
+    public void AddPower(int value)
+    {
+        simpleAttack += value;
+        swordAttack += value;
     }
 }

@@ -24,6 +24,12 @@ public class Player_Health : MonoBehaviour
     {
     }
 
+    public void GainHealth(int value)
+    {
+        currentHealth += value;
+        healthBar.SetHealth(currentHealth);
+    }
+
     public void TakeDamage(int damage)
     {
         if (!capacity.GetInvisibility())
