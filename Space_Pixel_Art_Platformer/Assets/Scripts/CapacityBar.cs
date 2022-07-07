@@ -9,7 +9,8 @@ public class CapacityBar : MonoBehaviour
     public void Reset(float val, float max)
     {
         slider.maxValue = max;
-        slider.value = val;
+        slider.minValue = val;
+        slider.value = max;
         fill.color = gradient.Evaluate(1f);
     }
 

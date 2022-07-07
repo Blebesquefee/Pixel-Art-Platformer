@@ -1,12 +1,14 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class EnemyPatrol : MonoBehaviour
 {
     // Private Field
     private Transform target;
     private int destpoint = 0;
-    private float _damagedelay = 0.5f;
-    private float _candealdamage = -1f;
+    public bool dealdamage;
+    public float delay = 1;
 
     // Public Field
     public float moveSpeed = 1;
@@ -18,6 +20,7 @@ public class EnemyPatrol : MonoBehaviour
     void Start()
     {
         target = waypoints[1];
+        dealdamage = true;
     }
 
     // Update is called once per frame
@@ -33,17 +36,29 @@ public class EnemyPatrol : MonoBehaviour
             target = waypoints[destpoint];
             spriteRenderer.flipX = !spriteRenderer.flipX;
         }
-
-        //Dealing Damage Part
-        _candealdamage = Time.time + _damagedelay;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.CompareTag("Player") && Time.time > _candealdamage)
+        if (collision.transform.CompareTag("Player") && dealdamage)
         {
+            dealdamage = false;
             Player_Health tmp = collision.transform.GetComponent<Player_Health>();
             tmp.TakeDamage(damage);
+            StartCoroutine(Delay());
         }
+    }
+
+    IEnumerator Delay()
+    {
+        //Print the time of when the function is first called.
+        Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSecondsRealtime(delay);
+        dealdamage = true;
+
+        //After we have waited 5 seconds print the time again.
+        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
     }
 }
