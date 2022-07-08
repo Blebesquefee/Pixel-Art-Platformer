@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Player_Health : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class Player_Health : MonoBehaviour
     public int currentHealth;
     public HealthBar healthBar;
     public GameObject hero;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,8 @@ public class Player_Health : MonoBehaviour
     public void GainHealth(int value)
     {
         currentHealth += value;
+        if (currentHealth > 250)
+            currentHealth = 250;
         healthBar.SetHealth(currentHealth);
     }
 
@@ -35,7 +40,23 @@ public class Player_Health : MonoBehaviour
         if (!capacity.GetInvisibility())
         {
             currentHealth -= damage;
-            healthBar.SetHealth(currentHealth);
+            if (currentHealth > 0)
+            {
+                animator.Play("hit", 0, 0);
+                healthBar.SetHealth(currentHealth);
+            }
+            else
+            {
+                animator.SetBool("death", true);
+                StartCoroutine(Delay());
+                Application.Quit();
+            }
         }
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSecondsRealtime(2);
+        Destroy(hero);
     }
 }

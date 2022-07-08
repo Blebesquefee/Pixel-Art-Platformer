@@ -1,54 +1,75 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Player_Mvmt : MonoBehaviour
 {
     // Private Field
-    private bool isJumping = false;
-    private bool isGrounded = true;
+    public bool isGrounded = true;
     private float moveSpeed = 250;
     private float jumpForce = 250;
-
+    public bool doublejump;
     private int simpleAttack = 25;
     private int swordAttack = 50;
     private Vector3 velocity = Vector3.zero;
+    private KeyCode jumpKey = KeyCode.Space;
 
     // Public Field
     public Rigidbody2D body;
+    public Animator animator;
     public Transform groundCheckerLeft;
     public Transform groundCheckerRight;
-    //public Animator animator;
     public SpriteRenderer spriteRenderer;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded)
-            isJumping = true;
+        if (Input.GetKeyDown(jumpKey))
+            Jump();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapArea(groundCheckerLeft.position, groundCheckerRight.position);
+        if (isGrounded)
+            doublejump = true;
         float horizontal_mvmt = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         MovePlayer(horizontal_mvmt);
         Flip(body.velocity.x);
-        //animator.SetFloat("Speed", Mathf.Abs(body.velocity.x));
     }
 
-    void MovePlayer(float horizontal_mvmt)
+    private void MovePlayer(float horizontal_mvmt)
     {
         Vector3 targetVelocity = new Vector2(horizontal_mvmt, body.velocity.y);
         body.velocity = Vector3.SmoothDamp(body.velocity, targetVelocity, ref velocity, .05f);
 
-        if (isJumping)
+        if (horizontal_mvmt == 0)
+            animator.SetBool("run", false);
+        else
+            animator.SetBool("run", true);
+    }
+
+    private void Jump()
+    {
+        if (!isGrounded && doublejump)
         {
+            animator.SetBool("doublejump", true);
             body.AddForce(new Vector2(0f, jumpForce));
-            isJumping = false;
+            doublejump = false;
+            StartCoroutine(ResetDoubleJumpDelay());
+            Debug.Log(doublejump);
+        }
+
+        if (isGrounded)
+        {
+            animator.SetBool("jump", true);
+            body.AddForce(new Vector2(0f, jumpForce));
+            StartCoroutine(ResetJumpDelay());
+            Debug.Log("Has jump");
         }
     }
 
-    void Flip(float _velocity)
+    private void Flip(float _velocity)
     {
         if (_velocity > 0.1f)
             spriteRenderer.flipX = false;
@@ -60,5 +81,17 @@ public class Player_Mvmt : MonoBehaviour
     {
         simpleAttack += value;
         swordAttack += value;
+    }
+
+    IEnumerator ResetJumpDelay()
+    {
+        yield return new WaitForSeconds(0.5F);
+        animator.SetBool("jump", false);
+    }
+
+    IEnumerator ResetDoubleJumpDelay()
+    {
+        yield return new WaitForSeconds(0.5F);
+        animator.SetBool("doublejump", false);
     }
 }
