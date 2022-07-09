@@ -17,17 +17,13 @@ public class Player_SimpleAttack : MonoBehaviour
             animator.Play("simpleAttack");
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log("we enter in collision");
-
-        if (collision.transform.CompareTag("Enemy") && Input.GetKeyDown(simpleAttackKey))
+        if (other.CompareTag("Enemy") && Input.GetKeyDown(simpleAttackKey))
         {
-            Debug.Log("Its an ennemy");
-            Enemy_Health tmp = collision.transform.GetComponent<Enemy_Health>();
+            Enemy_Health tmp = other.transform.GetComponent<Enemy_Health>();
             tmp.TakeDamage(damage);
         }
-
     }
 
     public void AddPower(int value)
@@ -35,3 +31,4 @@ public class Player_SimpleAttack : MonoBehaviour
         damage += value;
     }
 }
+

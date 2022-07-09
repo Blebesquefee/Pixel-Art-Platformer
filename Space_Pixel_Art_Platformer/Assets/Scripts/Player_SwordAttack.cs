@@ -7,6 +7,7 @@ public class Player_SwordAttack : MonoBehaviour
     //Private Part
     private int damage = 50;
     private KeyCode swordAttackKey = KeyCode.S;
+    private bool candamage = false;
 
     //Public Part
     public Animator animator;
@@ -23,12 +24,13 @@ public class Player_SwordAttack : MonoBehaviour
             StartCoroutine(DealDamage());
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.transform.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy") && candamage)
         {
-            Enemy_Health tmp = collision.transform.GetComponent<Enemy_Health>();
+            Enemy_Health tmp = other.transform.GetComponent<Enemy_Health>();
             tmp.TakeDamage(damage);
+            candamage = false;
         }
     }
 
@@ -43,6 +45,7 @@ public class Player_SwordAttack : MonoBehaviour
         if (Input.GetKey(swordAttackKey))
         {
             animator.Play("swordAttack");
+            candamage = true;
             collider.enabled = true;
             StartCoroutine(Delay());
         }

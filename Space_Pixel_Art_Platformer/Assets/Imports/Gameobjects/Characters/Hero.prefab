@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4463613522900700967}
   - component: {fileID: 4463613522900700966}
-  - component: {fileID: 4463613522900700969}
+  - component: {fileID: 5383541768328329597}
   m_Layer: 0
   m_Name: SimpleAttackZone
   m_TagString: PlayerAttack
@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4463613524749501530}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &4463613522900700966
 CapsuleCollider2D:
@@ -46,10 +46,10 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 0.3}
+  m_Offset: {x: 0.2, y: 0}
+  m_Size: {x: 1.2, y: 0.3}
   m_Direction: 1
---- !u!114 &4463613522900700969
+--- !u!114 &5383541768328329597
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,11 +58,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4463613522900700964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 327cddb9d03a0469eb11096045d1eb4a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9de8f0aaa006441c1b533b66d2a653cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4463613524749501532}
-  collider: {fileID: 4463613522900700966}
 --- !u!1 &4463613523437871004
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +91,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4463613524749501530}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4463613523615129766
 GameObject:
@@ -125,7 +124,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4463613524749501530}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &4463613523615129768
 CapsuleCollider2D:
@@ -186,7 +185,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4463613524749501530}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4463613524749501524
 GameObject:
@@ -223,10 +222,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4463613523437871007}
-  - {fileID: 4463613524425114400}
   - {fileID: 4463613522900700967}
   - {fileID: 4463613523615129769}
+  - {fileID: 4463613523437871007}
+  - {fileID: 4463613524425114400}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -357,8 +356,8 @@ MonoBehaviour:
   groundCheckerLeft: {fileID: 4463613523437871007}
   groundCheckerRight: {fileID: 4463613524425114400}
   spriteRenderer: {fileID: 4463613524749501531}
-  simpleAttack: {fileID: 4463613522900700969}
-  swordAttack: {fileID: 4463613523615129771}
+  simpleAttack: {fileID: 0}
+  swordAttack: {fileID: 0}
   simplecollider: {fileID: 0}
   swordcollider: {fileID: 0}
 --- !u!114 &4463613524749501533
