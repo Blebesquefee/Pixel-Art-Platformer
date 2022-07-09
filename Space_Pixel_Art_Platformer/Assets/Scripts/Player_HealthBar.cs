@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-public class HealthBar : MonoBehaviour
+public class Player_HealthBar : MonoBehaviour
 {
     public Slider slider;
     public Image fill;

@@ -12,7 +12,7 @@ public class Player_Capacity : MonoBehaviour
 
     // Public Field
     public KeyCode capacityKey;
-    public CapacityBar capacityBar;
+    public Player_CapacityBar capacityBar;
     public SpriteRenderer sprite;
 
 

@@ -2,13 +2,12 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class EnemyPatrol : MonoBehaviour
+public class Enemy_Patrol : MonoBehaviour
 {
     // Private Field
     private Transform target;
     private int destpoint = 0;
-    public bool dealdamage;
-    public float delay = 1;
+    private bool dealdamage;
 
     // Public Field
     public float moveSpeed = 1;
@@ -38,7 +37,7 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.transform.CompareTag("Player") && dealdamage)
         {
@@ -51,7 +50,7 @@ public class EnemyPatrol : MonoBehaviour
 
     IEnumerator Delay()
     {
-        yield return new WaitForSecondsRealtime(delay);
+        yield return new WaitForSecondsRealtime(0.5f);
         dealdamage = true;
     }
 }

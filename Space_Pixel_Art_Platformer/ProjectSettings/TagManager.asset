@@ -6,6 +6,7 @@ TagManager:
   tags:
   - InteractUI
   - PlayerAttack
+  - Enemy
   layers:
   - Default
   - TransparentFX

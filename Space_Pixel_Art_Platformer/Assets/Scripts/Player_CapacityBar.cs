@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-public class CapacityBar : MonoBehaviour
+public class Player_CapacityBar : MonoBehaviour
 {
     public Slider slider;
     public Image fill;

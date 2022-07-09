@@ -8,9 +8,8 @@ public class Player_Mvmt : MonoBehaviour
     public bool isGrounded = true;
     private float moveSpeed = 250;
     private float jumpForce = 250;
-    public bool doublejump;
-    private int simpleAttack = 25;
-    private int swordAttack = 50;
+    private bool doublejump;
+    private int flipstate = 0;
     private Vector3 velocity = Vector3.zero;
     private KeyCode jumpKey = KeyCode.Space;
 
@@ -20,7 +19,10 @@ public class Player_Mvmt : MonoBehaviour
     public Transform groundCheckerLeft;
     public Transform groundCheckerRight;
     public SpriteRenderer spriteRenderer;
-
+    public Player_SimpleAttack simpleAttack;
+    public Player_SwordAttack swordAttack;
+    public CapsuleCollider2D simplecollider;
+    public CapsuleCollider2D swordcollider;
     // Update is called once per frame
     void Update()
     {
@@ -57,7 +59,6 @@ public class Player_Mvmt : MonoBehaviour
             body.AddForce(new Vector2(0f, jumpForce));
             doublejump = false;
             StartCoroutine(ResetDoubleJumpDelay());
-            Debug.Log(doublejump);
         }
 
         if (isGrounded)
@@ -65,22 +66,36 @@ public class Player_Mvmt : MonoBehaviour
             animator.SetBool("jump", true);
             body.AddForce(new Vector2(0f, jumpForce));
             StartCoroutine(ResetJumpDelay());
-            Debug.Log("Has jump");
         }
     }
 
     private void Flip(float _velocity)
     {
+        int currentflipstate = 0;
         if (_velocity > 0.1f)
+        {
             spriteRenderer.flipX = false;
-        else if (_velocity < -0.1f)
+            currentflipstate = 0;
+        }
+        if (_velocity < -0.1f)
+        {
             spriteRenderer.flipX = true;
+            currentflipstate = 1;
+        }
+        if (currentflipstate != flipstate)
+        {
+            flipstate = currentflipstate;
+            simplecollider.transform.localPosition =
+               new Vector3(-simplecollider.transform.localPosition.x, simplecollider.transform.localPosition.y, simplecollider.transform.localPosition.z);
+            swordcollider.transform.localPosition =
+                new Vector3(-swordcollider.transform.localPosition.x, swordcollider.transform.localPosition.y, swordcollider.transform.localPosition.z);
+        }
     }
 
     public void AddPower(int value)
     {
-        simpleAttack += value;
-        swordAttack += value;
+        simpleAttack.AddPower(value);
+        swordAttack.AddPower(value);
     }
 
     IEnumerator ResetJumpDelay()

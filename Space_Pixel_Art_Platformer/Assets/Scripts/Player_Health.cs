@@ -10,7 +10,7 @@ public class Player_Health : MonoBehaviour
 
     // Public Field
     public int currentHealth;
-    public HealthBar healthBar;
+    public Player_HealthBar healthBar;
     public GameObject hero;
     public Animator animator;
 
@@ -48,13 +48,13 @@ public class Player_Health : MonoBehaviour
             else
             {
                 animator.SetBool("death", true);
-                StartCoroutine(Delay());
+                StartCoroutine(Death());
                 Application.Quit();
             }
         }
     }
 
-    IEnumerator Delay()
+    IEnumerator Death()
     {
         yield return new WaitForSecondsRealtime(2);
         Destroy(hero);
