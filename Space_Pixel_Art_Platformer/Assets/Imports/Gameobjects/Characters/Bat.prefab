@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1275651569912110205}
-  - component: {fileID: 5190026773871713674}
+  - component: {fileID: 7583855951965425948}
   - component: {fileID: 8418662081985569298}
   - component: {fileID: 1200313301849441453}
   - component: {fileID: 123514038310087603}
@@ -37,7 +37,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &5190026773871713674
+--- !u!95 &7583855951965425948
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -47,7 +47,7 @@ Animator:
   m_GameObject: {fileID: 1275651569912110204}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1cbde504985134022a44ca5ff7046879, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -149,7 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 20
   enemy: {fileID: 1275651569912110204}
-  animator: {fileID: 5190026773871713674}
+  animator: {fileID: 7583855951965425948}
+  delay: 0.4
 --- !u!114 &2958038826156227473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,3 +241,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toDestroy: {fileID: 1275651569912110204}
+  animator: {fileID: 7583855951965425948}
+  delay: 0.4
