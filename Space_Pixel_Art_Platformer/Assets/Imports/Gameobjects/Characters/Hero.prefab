@@ -356,10 +356,10 @@ MonoBehaviour:
   groundCheckerLeft: {fileID: 4463613523437871007}
   groundCheckerRight: {fileID: 4463613524425114400}
   spriteRenderer: {fileID: 4463613524749501531}
-  simpleAttack: {fileID: 0}
-  swordAttack: {fileID: 0}
-  simplecollider: {fileID: 0}
-  swordcollider: {fileID: 0}
+  simpleAttack: {fileID: 5383541768328329597}
+  swordAttack: {fileID: 4463613523615129771}
+  simplecollider: {fileID: 4463613522900700966}
+  swordcollider: {fileID: 4463613523615129768}
 --- !u!114 &4463613524749501533
 MonoBehaviour:
   m_ObjectHideFlags: 0

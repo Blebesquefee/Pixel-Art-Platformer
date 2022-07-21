@@ -7,6 +7,7 @@ TagManager:
   - InteractUI
   - PlayerAttack
   - Enemy
+  - FallZone
   layers:
   - Default
   - TransparentFX

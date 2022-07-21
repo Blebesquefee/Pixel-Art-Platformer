@@ -72,6 +72,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toDestroy: {fileID: 7199731399612916748}
+  animator: {fileID: 7865833032247677705}
+  delay: 0
 --- !u!1 &7199731399612916748
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +121,7 @@ Animator:
   m_GameObject: {fileID: 7199731399612916748}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fac703fb93aaa4aa6b97f875d05c2580, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -222,6 +224,7 @@ MonoBehaviour:
   health: 50
   enemy: {fileID: 7199731399612916748}
   animator: {fileID: 7865833032247677705}
+  delay: 0.25
 --- !u!114 &7728550232592067324
 MonoBehaviour:
   m_ObjectHideFlags: 0

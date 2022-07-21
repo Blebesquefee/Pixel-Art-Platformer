@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class Player_Health : MonoBehaviour
 {
@@ -49,14 +50,14 @@ public class Player_Health : MonoBehaviour
             {
                 animator.SetBool("death", true);
                 StartCoroutine(Death());
-                Application.Quit();
             }
         }
     }
 
     IEnumerator Death()
     {
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(1);
         Destroy(hero);
+        SceneManager.LoadScene(0);
     }
 }
