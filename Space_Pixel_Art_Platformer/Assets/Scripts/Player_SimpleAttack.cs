@@ -1,11 +1,12 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class Player_SimpleAttack : MonoBehaviour
 {
     //Private Part
-    private int damage = 25;
+    private double damage = 25;
+    private float powdelay = 0;
     private KeyCode simpleAttackKey = KeyCode.W;
 
     //Public Part
@@ -26,9 +27,15 @@ public class Player_SimpleAttack : MonoBehaviour
         }
     }
 
-    public void AddPower(int value)
+    public void AddPower(double value)
     {
-        damage += value;
+        double tmp = this.damage;
+        this.damage *= value;
+        StartCoroutine(BonusDamage());
+        this.damage = tmp;
     }
+    public void SetPowDelay(float delay) { this.powdelay = delay; }
+
+    IEnumerator BonusDamage() { yield return new WaitForSecondsRealtime(powdelay); }
 }
 

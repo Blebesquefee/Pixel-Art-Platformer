@@ -23,7 +23,7 @@ public class Player_Mvmt : MonoBehaviour
     public Player_SwordAttack swordAttack;
     public CapsuleCollider2D simplecollider;
     public CapsuleCollider2D swordcollider;
-  
+
     void Update()
     {
         if (Input.GetKeyDown(jumpKey))
@@ -92,10 +92,16 @@ public class Player_Mvmt : MonoBehaviour
         }
     }
 
-    public void AddPower(int value)
+    public void AddPower(double value)
     {
         simpleAttack.AddPower(value);
         swordAttack.AddPower(value);
+    }
+
+    public void SetPowDelay(float delay)
+    {
+        simpleAttack.SetPowDelay(delay);
+        swordAttack.SetPowDelay(delay);
     }
 
     IEnumerator ResetJumpDelay()

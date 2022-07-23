@@ -6,14 +6,13 @@ public class Enemy_Health : MonoBehaviour
 {
     //Private Part
 
-
     //Public Part
-    public int health;
     public GameObject enemy;
     public Animator animator;
     public float delay;
+    public double health;
 
-    public void TakeDamage(int value)
+    public void TakeDamage(double value)
     {
         health -= value;
         if (health < 0)

@@ -5,7 +5,8 @@ using System.Collections.Generic;
 public class Player_SwordAttack : MonoBehaviour
 {
     //Private Part
-    private int damage = 50;
+    private double damage = 50;
+    private float powdelay = 0;
     private KeyCode swordAttackKey = KeyCode.S;
     private bool candamage = false;
 
@@ -34,10 +35,16 @@ public class Player_SwordAttack : MonoBehaviour
         }
     }
 
-    public void AddPower(int value)
+    public void AddPower(double value)
     {
-        damage += value;
+        double tmp = this.damage;
+        this.damage *= value;
+        StartCoroutine(BonusDamage());
+        this.damage = tmp;
     }
+    public void SetPowDelay(float delay) { this.powdelay = delay; }
+
+    IEnumerator BonusDamage() { yield return new WaitForSecondsRealtime(powdelay); }
 
     IEnumerator DealDamage()
     {

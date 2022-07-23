@@ -147,10 +147,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d798e0ebe4094b3f949f5a65ad4c171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
   enemy: {fileID: 1275651569912110204}
   animator: {fileID: 7583855951965425948}
   delay: 0.4
+  health: 15
 --- !u!114 &2958038826156227473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
-  damage: 0
+  damage: 20
   waypoints:
   - {fileID: 0}
   - {fileID: 0}

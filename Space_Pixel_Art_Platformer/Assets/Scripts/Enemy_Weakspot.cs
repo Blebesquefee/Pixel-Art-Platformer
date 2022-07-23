@@ -17,7 +17,6 @@ public class Enemy_Weakspot : MonoBehaviour
         }
     }
 
-
     IEnumerator Death()
     {
         yield return new WaitForSecondsRealtime(delay);

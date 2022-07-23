@@ -8,6 +8,7 @@ TagManager:
   - PlayerAttack
   - Enemy
   - FallZone
+  - Chest
   layers:
   - Default
   - TransparentFX

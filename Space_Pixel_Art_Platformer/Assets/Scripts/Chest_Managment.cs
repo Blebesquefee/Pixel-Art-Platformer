@@ -8,8 +8,8 @@ public class Chest_Managment : MonoBehaviour
     //Private Part
     private bool isInRange;
     private bool isOpen;
-    private bool coin;
-    private bool hearth;
+    private double pow = 0;
+    private int life = 0;
     private Text interactUI;
 
     //Public Part
@@ -47,14 +47,14 @@ public class Chest_Managment : MonoBehaviour
         {
             Heart.SetActive(true);
             Player_Health health = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Health>();
-            health.GainHealth(100);
+            health.GainHealth(life);
             heartAnimator.SetTrigger("isHeart");
         }
         else
         {
             Coin.SetActive(true);
             Player_Mvmt power = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Mvmt>();
-            power.AddPower(25);
+            power.AddPower(pow);
             coinAnimator.SetTrigger("isCoins");
         }
     }
@@ -76,4 +76,7 @@ public class Chest_Managment : MonoBehaviour
             isInRange = false;
         }
     }
+
+    public void SetLife(int value) { this.life = value; }
+    public void SetPow(double value) { this.pow = value; }
 }

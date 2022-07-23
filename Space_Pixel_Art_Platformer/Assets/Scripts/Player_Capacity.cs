@@ -8,7 +8,7 @@ public class Player_Capacity : MonoBehaviour
     private bool ability;
     private bool isInvisible;
     private float coolTime = 15;
-    private float coolAbility = 5;
+    private float coolAbility = 0;
 
     // Public Field
     public KeyCode capacityKey;
@@ -68,6 +68,9 @@ public class Player_Capacity : MonoBehaviour
             }
         }
     }
+
+    public void SetCoolAbility(float value) { this.coolAbility = value; }
+    public float GetCoolAbility() { return this.coolAbility; }
 
     public bool GetInvisibility()
     {
