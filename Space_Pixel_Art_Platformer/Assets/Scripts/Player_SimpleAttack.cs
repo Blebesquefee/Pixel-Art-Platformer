@@ -11,20 +11,34 @@ public class Player_SimpleAttack : MonoBehaviour
 
     //Public Part
     public Animator animator;
+    public CapsuleCollider2D collider;
+
+    void Start()
+    {
+        collider.enabled = false;
+    }
 
     private void Update()
     {
         if (Input.GetKeyDown(simpleAttackKey))
-            animator.Play("simpleAttack");
+            StartCoroutine(DealDamage());
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy") && Input.GetKeyDown(simpleAttackKey))
+        if (other.CompareTag("Enemy"))
         {
             Enemy_Health tmp = other.transform.GetComponent<Enemy_Health>();
             tmp.TakeDamage(damage);
         }
+    }
+
+    IEnumerator DealDamage()
+    {
+            animator.Play("simpleAttack");
+            collider.enabled = true;
+            yield return new WaitForSecondsRealtime(0.01f);
+            collider.enabled = false;
     }
 
     public void AddPower(double value)

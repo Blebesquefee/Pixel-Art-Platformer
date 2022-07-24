@@ -42,20 +42,21 @@ public class Chest_Managment : MonoBehaviour
         isOpen = true;
 
         System.Random rnd = new System.Random();
-        int tmp = rnd.Next(2);
+        int tmp = rnd.Next(3);
         if (tmp == 0)
-        {
-            Heart.SetActive(true);
-            Player_Health health = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Health>();
-            health.GainHealth(life);
-            heartAnimator.SetTrigger("isHeart");
-        }
-        else
         {
             Coin.SetActive(true);
             Player_Mvmt power = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Mvmt>();
             power.AddPower(pow);
             coinAnimator.SetTrigger("isCoins");
+        }
+        else
+        {
+            Heart.SetActive(true);
+            Player_Health health = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Health>();
+            health.GainHealth(life);
+            heartAnimator.SetTrigger("isHeart");
+            
         }
     }
 

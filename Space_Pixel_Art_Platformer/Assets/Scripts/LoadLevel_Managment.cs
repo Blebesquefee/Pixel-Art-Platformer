@@ -12,10 +12,7 @@ public class LoadLevel_Managment : MonoBehaviour
     {
         GameObject collision = other.gameObject;
         if (collision.transform.CompareTag("Player"))
-        {
-            Debug.Log("Its a player");
             LoadLevel();
-        }
     }
 
     void LoadLevel(){SceneManager.LoadScene(iLevelToLoad);}

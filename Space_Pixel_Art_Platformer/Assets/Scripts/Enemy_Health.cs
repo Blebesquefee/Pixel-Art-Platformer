@@ -18,6 +18,8 @@ public class Enemy_Health : MonoBehaviour
         if (health < 0)
         {
             animator.SetBool("death", true);
+            Collider2D other = enemy.GetComponent<Collider2D>();
+            other.enabled = false;
             StartCoroutine(Death());
         }
         else

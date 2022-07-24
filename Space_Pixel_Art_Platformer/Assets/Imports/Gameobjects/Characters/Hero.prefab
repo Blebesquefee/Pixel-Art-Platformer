@@ -62,6 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4463613524749501532}
+  collider: {fileID: 4463613522900700966}
 --- !u!1 &4463613523437871004
 GameObject:
   m_ObjectHideFlags: 0
